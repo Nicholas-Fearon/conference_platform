@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sand text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(217, 119, 6, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(29, 77, 79, 0.18), transparent 26%),
+    linear-gradient(180deg, #faf6ee 0%, #f5f1e8 100%);
+}
+
+* {
+  @apply border-stone-200;
+}
+
+.app-shell {
+  @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
+}
+
+.surface {
+  @apply rounded-[2rem] border border-white/70 bg-white/80 shadow-card backdrop-blur;
+}
+
+.eyebrow {
+  @apply inline-flex items-center rounded-full border border-ember/20 bg-ember/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-ember;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-ink md:text-4xl;
+}
